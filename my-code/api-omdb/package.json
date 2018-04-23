@@ -1,0 +1,8 @@
+{
+  "name": "api-omdb",
+  "version": "1.0.0",
+  "description": "this represent public api to search films",
+  "main": "index.js",
+  "author": "luizhenriquesoares",
+  "license": "MIT"
+}
