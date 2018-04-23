@@ -1,0 +1,26 @@
+{
+    "plugins": [
+      "transform-decorators-legacy",
+      "transform-class-properties",
+      "syntax-decorators",
+      "babel-plugin-transform-es3-member-expression-literals",
+      "babel-plugin-transform-es3-property-literals",
+      "babel-plugin-transform-object-assign",
+      "babel-plugin-transform-class-properties",
+      "babel-plugin-transform-object-rest-spread"
+    ],
+    "presets": [
+      ["es2015", {
+        "modules": false
+      }], "stage-0", "react", "flow"
+    ],
+    "env": {
+      "development": {
+        "plugins": ["react-hot-loader/babel"]
+      },
+      "production": {
+        "presets": ["react-optimize"]
+      }
+    }
+  }
+  
