@@ -1,0 +1,25 @@
+const graphql = require('graphql')
+const {GraphQLString, GraphQLObjectType, GraphQLList, GraphQLInt, GraphQLNonNull, GraphQLBoolean} = graphql
+const OMDbType = require('./type/OMDb')
+const axios = require('axios')
+
+
+/* -------------------------------------------------------------------------- *\
+ *  Exposes Root Query GraphQL
+\* -------------------------------------------------------------------------- */
+
+const root =  new GraphQLObjectType({
+  name: 'RootQuery',
+  fields: {
+    films: {
+      type: OMDbType,
+      resolve(parentValue, args) {
+        return axios.get('http://www.omdbapi.com/?t=game&apikey=BanMePlz').then(response => {
+          return response.data
+        })
+      }
+    }
+  }
+})
+
+module.exports = root;

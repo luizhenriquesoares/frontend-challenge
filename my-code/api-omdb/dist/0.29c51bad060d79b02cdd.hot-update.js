@@ -1,0 +1,2 @@
+require("source-map-support").install(),exports.id=0,exports.modules={"./schema/rootQuery.js":function(e,o,r){var t=r("graphql"),a=(t.GraphQLString,t.GraphQLObjectType),s=(t.GraphQLList,t.GraphQLInt,t.GraphQLNonNull,t.GraphQLBoolean,r("./schema/type/films.js")),n=r("axios"),p=new a({name:"RootQuery",fields:{films:{type:s,resolve:function(e,o){return n.get("http://www.omdbapi.com/?t=game&apikey=BanMePlz").then(function(e){return console.log("response"),console.log(e),e.data})}}}});e.exports=p}};
+//# sourceMappingURL=0.29c51bad060d79b02cdd.hot-update.js.map

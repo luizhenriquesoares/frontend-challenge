@@ -1,0 +1,2 @@
+require("source-map-support").install(),exports.id=0,exports.modules={"./schema/schema.js":function(e,r,s){var o=s("graphql"),a=s("./schema/rootQuery.js").RootQuery,p=o.GraphQLSchema;e.exports=new p({query:a})}};
+//# sourceMappingURL=0.2e8a52f388b8e4a59570.hot-update.js.map

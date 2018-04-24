@@ -1,0 +1,2 @@
+require("source-map-support").install(),exports.id=0,exports.modules={"./schema/type/films.js":function(e,r,p){var t=p("graphql"),s=t.GraphQLString,i=t.GraphQLObjectType,n=(t.GraphQLList,t.GraphQLInt,t.GraphQLNonNull,t.GraphQLBoolean,new i({name:"FilmsType",description:"this represent Films",fields:function(){return{Title:{type:s}}}}));e.exports=n}};
+//# sourceMappingURL=0.f92da3e162a8d1ee47fb.hot-update.js.map
